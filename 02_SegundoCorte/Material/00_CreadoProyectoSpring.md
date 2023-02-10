@@ -16,3 +16,8 @@
 ### 3.1 Descarga dependencias
 
 ![image](https://user-images.githubusercontent.com/31961588/217987724-982f3099-fd5f-44af-945b-ff1eb71b0106.png)
+
+
+### 4. Estructura proyecto
+
+![image](https://user-images.githubusercontent.com/31961588/217987911-26128942-fca4-43ee-9f7e-76db8e4e1867.png)
