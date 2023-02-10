@@ -16,20 +16,20 @@
 
 ![image](https://user-images.githubusercontent.com/31961588/217998367-aa345a85-e580-42ff-8535-3e984f1cbb35.png)
 
- En index.html clic derecho propiedades 
+##### En index.html clic derecho propiedades 
 
 ![image](https://user-images.githubusercontent.com/31961588/217998574-550ef87d-82e3-43f0-b880-d3bd0fc8f400.png)
 
 
 ### 3. Lanzar el proyecto
 
-#### 3.1
+#### 3.1 Lanzar proyecto
 ![image](https://user-images.githubusercontent.com/31961588/217998915-1d2d9e67-832e-4ae3-aba9-51b858215e04.png)
 
-#### 3.2
+#### 3.2 servidor tomcat
 ![image](https://user-images.githubusercontent.com/31961588/217999007-3a7b094a-490a-4cc6-a292-531d2c853ea6.png)
 
-#### 3.3
+#### 3.3 http://localhost:8080/index
 ![image](https://user-images.githubusercontent.com/31961588/217999067-d59f9d64-af7f-4fe3-96f0-c8d8711e5a0a.png)
 
 
