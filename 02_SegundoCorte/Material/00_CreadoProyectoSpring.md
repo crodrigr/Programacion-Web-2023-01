@@ -21,3 +21,7 @@
 ### 4. Estructura proyecto
 
 ![image](https://user-images.githubusercontent.com/31961588/217987911-26128942-fca4-43ee-9f7e-76db8e4e1867.png)
+
+### 5. Dependencias del pom.xml
+
+![image](https://user-images.githubusercontent.com/31961588/217988032-9718cfa4-1cd0-42c9-8af3-0efe4557befa.png)
