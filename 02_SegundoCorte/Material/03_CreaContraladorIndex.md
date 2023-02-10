@@ -1,6 +1,9 @@
 # Crear controlador y index
 
-## 1. Crear el IndexController
+
+
+
+### 1. Crear el IndexController
 
 ![image](https://user-images.githubusercontent.com/31961588/217998843-2ea5bd68-c0f6-4043-81cd-371e98e58395.png)
 
