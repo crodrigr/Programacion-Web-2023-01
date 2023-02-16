@@ -8,6 +8,6 @@
 
 ## 2. ControllerHome forward
 
-Direcciona a la pagina pero no cambia la ruta de la url
+Direcciona a la pagina pero no cambia la ruta de la url. Ejecuta un RequestDispacher.foward() 
 
 ![image](https://user-images.githubusercontent.com/31961588/219504090-91a19e3e-a245-4380-8f9f-1bfecf13baf3.png)
