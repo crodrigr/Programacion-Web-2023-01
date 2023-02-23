@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>::Ejemplo usando el DOM::</title>
+	<meta charset="utf-8">
+	<!-- Insertamos el archivo CSS compilado y comprimido -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- Theme opcional -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <script type="text/javascript">
+    	function cambiar_color (trazo){
+    		var w=document.getElementById('uno');
+    		w.style.color=trazo;
+    	}
+    	function cambiartexto (cadena){
+            //var w=document.getElementById('uno');
+    		//w.innerHTML=cadena;
+    		document.getElementById('uno').innerHTML=cadena;
+    	}
+    	function copiar(){
+           //var h=document.getElementById('parrafo1').innerHTML;
+           //document.getElementById('parrafo2').innerHTML=h;
+           document.getElementById('parrafo2').innerHTML=document.getElementById('parrafo1').innerHTML;
+    	}
+
+    	function copiar2(){
+    		var h=document.getElementById('lista').innerHTML;
+            document.getElementById('parrafo3').innerHTML=h;
+    	}
+    </script>
+    <script type="text/javascript">
+    	function cambiar(){
+    		//document.getElementById('enlace').innerHTML="UNAB";
+    		document.getElementById('enlace').href="http://www.unab.edu.co";
+    		document.getElementById('enlace').target="_blank";
+    		document.getElementById('enlace').innerHTML=document.getElementById('enlace').innerHTML + ' UNAB Bucaramanga';
+    	}
+    </script>
+
+</head>
+<body style="margin:20px ">
+   <p id="uno" onclick="cambiartexto('Texto cambiado.');">Este es un ejemplo del uso del método getElementById.</p>
+   <button  onclick="cambiar_color('#F88D03');">Cambiar a Naranja</button>
+   <button  onclick="cambiar_color('Blue');">Cambiar a Azul</button>
+
+   <br><br>
+   <p id="parrafo1">Este es el párrafo No.1.</p>
+   <p>Haga CLick en el´siguiente botón para copiar y pegar el texto anterior.</p>
+   <button id="ver" onclick="copiar();">Copiar Texto</button>
+   <br>
+   <hr>
+   <p id ="parrafo2"></p>
+   <br> <br>
+   <h2> Deportes favoritos</h2>
+   <ul id="lista">
+   	  <li> Fútbol
+   	  	<li> Tenis
+   	  		<li> Ciclismo
+   </ul>
+   <button id="ver" onclick="copiar2();">Copiar Texto</button>
+   <br>
+   <p id="parrafo3"></p>
+   <br>
+   <h2>Visita nuestro sitio prefereido:</h2>
+   <a id="enlace" href="http://www.microsoft.com">Microsoft</a>
+   <button id="ver2" onclick="cambiar();">Cambiar configuración de enlace</button>
+   <br>
+   <form>
+   	  <div class="form-group">
+	      	<label for="codigo">Código</label>
+	      	<input type="text" name="codigo" class="form-control" id="codigo" placeholder="Digite el código del producto">
+
+	      	<label for="nombre">Nombre</label>
+	      	<input type="text" name="nombre" class="form-control" id="nombre" placeholder="Digite el nombre del producto">
+        </div>
+        <div class="form-group">
+	      	<label for="precio">Precio</label>
+	      	<input type="numeric" name="precio" class="form-control" id="precio" placeholder="Digite el precio del producto">
+
+	      	<label for="fecha">Fecha de Vencimientos</label>
+	      	<input type="date" name="fecha" class="form-control" id="fecha" >
+        </div> 
+        <div>
+        	<button type="button" class="btn btn-primary">Nuevo Prodcuto</button>
+        	<button type="button" class="btn btn-success">Guardar</button>
+        	<button type="button" class="btn btn-danger" onclick="alert('Ver más productos');">Cancelar</button>
+        </div>
+   </form>
+</body>
+</html>

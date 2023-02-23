@@ -1,0 +1,96 @@
+Generar números aleatorios:
+function map(f) {
+  var result = []; // Crea un nuevo arreglo
+  let i; // Declara una variable
+  for (i = 0; i < f; i++){
+      result[i] = parseInt((Math.random()*100) +20);
+  }  
+  return result;
+}
+alert(map(5));
+____________________________
+
+<form name="selectForm">
+  <p>
+    <label for="deportes">Seleccione los deportes que más le gustan, luego haga clic en el botón de abajo:</label><br>
+    <select id="deportes" name="deportes" multiple="multiple">
+      <option selected="selected" class="form-select" aria-label="Default select example">Atletismo</option>
+      <option>Fútbol</option>
+      <option>Tenis</option>
+      <option>Natación</option>
+      <option>Ciclismo</option>
+      <option>Basket</option>
+    </select>
+  </p>
+  <p><input id="btn" type="button" value="Ver seleccionados" class="btn btn-primary"/></p>
+</form>
+
+<script>
+  
+  //alert(numberSelected);
+  let btn = document.getElementById('btn');
+  btn.addEventListener('click', function() {
+  	let numberSelected = 0;
+  for (let i = 0; i < document.selectForm.deportes.options.length; i++) {
+    if (document.selectForm.deportes.options[i].selected) {
+      numberSelected++;
+    }
+  }
+  alert('Número de opciones seleccionadas: ' + numberSelected);
+  });
+
+  for(var i=0;i<5;i++){
+    document.selectForm.deportes.options[i] = new Option(i, i);
+  }
+</script>
+
+___________________________________________
+
+function Paises(listado) {
+   var result = ''; 
+   var i;
+   for (i = 0; i < arguments.length; i++) {
+      result += arguments[i] + "-";
+   }
+   return result;
+}
+alert(Paises('Bolivia', 'Ecuador', 'Francia', 'Brasil'));
+
+___________________________
+
+https://www.ma-no.org/es/programacion/javascript/todas-las-funciones-de-javascript-y-los-metodos-para-manipular-los-arrays
+
+
+______________________________
+
+Ejemplo:
+
+<body>
+	<script type="text/javascript">
+	 function fileValidation(){
+     var fileInput = document.getElementById('archivo');
+     var filePath = fileInput.value;
+     var allowedExtensions = /(.jpg|.jpeg|.png|.gif)$/i;
+     if(!allowedExtensions.exec(filePath)){
+        alert('Por favor cargar archivos con extención .jpeg/.jpg/.png/.gif.');
+        fileInput.value = '';
+        return false;
+    }else{
+        //Image preview
+        if (fileInput.files && fileInput.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function(w) {
+                document.getElementById('imagen').innerHTML = '<img src="'+w.target.result+'"/>';
+            };
+            reader.readAsDataURL(fileInput.files[0]);
+        }
+    }
+}
+	</script>
+<!-- File input field -->
+
+<input type="file" id="archivo" onchange="return fileValidation()"/>
+
+<!-- Image preview -->
+<div id="imagen"></div>
+</body>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>::Ejemplo No.2::</title>
+	<meta charset="utf-8">
+	<!-- Insertamos el archivo CSS compilado y comprimido -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- Theme opcional -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <script type="text/javascript">
+    	function validar(){
+          var elemento=document.getElementById('archivo');
+          var ruta=elemento.value;
+          var extenciones=/(.jpg|.jpeg|.png)$/i;
+          if (!extenciones.exec(ruta)){
+              alert('Archivo no válido');
+              elemento.value='';
+              return false;
+          }else{
+          	//Mostrar la imagen
+          	if (elemento.files && elemento.files[0]){
+               var ver=new FileReader;
+               ver.onload=function(w){
+                   document.getElementById("foto").innerHTML='<img src="' + w.target.result + '"/>';
+               };
+               ver.readAsDataURL(elemento.files[0]);
+          	}
+          }     
+
+    	}
+    </script>
+</head>
+<body>
+  <h2>Seleccione un imagen</h2>
+  <br>
+  <input type="file" name="archivo" id="archivo" onchange="return validar();">
+  <br><br>
+  <div id="foto">
+  	
+
+  </div>
+</body>
+</html>

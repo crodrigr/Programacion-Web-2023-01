@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Maquetación</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="maquetacion1.css">
+        <script src="maquetacion1.js"></script>
+    </head>
+    <body>
+        <div id="contenedor">
+            <div id="header">Header</div>
+            <div id="nav">Nav</div>
+            <div id="contenido">
+                <div id="section">Section
+                    <article class="articulo">Articulo 1</article>
+                    <article class="articulo">Articulo 2</article>
+                    <article class="articulo">Articulo 3</article>
+                    <article class="articulo">Articulo 4</article>
+                </div>
+                <div id="aside">
+                    <form action="">
+                        <h2 class="titulo">Información Abonado</h2>
+                        <table id="abonado">
+                            <tr></tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr>
+                                <th>Id Abonado       :</th>
+                                <td><input type="number" name="id" id="id" maxlength="15"></td>
+                            </tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr>
+                                <th>Nombre Abonado   :</th>
+                                <td><input type="text" name="nombre" id="nombre" maxlength="50"></td>
+                            </tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr>
+                                <th>Estrato          :</th>
+                                <td>
+                                    <select name="estrato" id="estrato">
+                                        <option value="1">Estrato 1</option>
+                                        <option value="2">Estrato 2</option>
+                                        <option value="3">Estrato 3</option>
+                                        <option value="4">Estrato 4</option>
+                                        <option value="5">Estrato 5</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr>
+                                <th id="tit">Impulsos Mes     :</th>
+                                <td><input type="number" name="impulsos" id="impulsos" maxlength="15"></td>
+                            </tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr><td><input onclick="facturacion()" type="button" value="Facturar" class="boton"></td></tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+            <div id="footer">Footer</div>
+        </div>
+    </body>
+
+</html>
