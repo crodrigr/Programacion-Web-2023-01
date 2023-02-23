@@ -2,18 +2,22 @@
 
 ## 1. Crear proyecto
 
-![image](https://user-images.githubusercontent.com/31961588/220807896-55656f02-26a7-44ee-b06e-a8e202ab089f.png)
+![image](https://user-images.githubusercontent.com/31961588/220813728-d027879a-bc67-48e6-bf56-722987a8061a.png)
 
 
 ## 2. Dependencias
 
-![image](https://user-images.githubusercontent.com/31961588/220808158-d25f516b-4f9d-44ab-bf91-4b2615ebbe67.png)
-
+![image](https://user-images.githubusercontent.com/31961588/220813826-141175fb-94f5-4af0-af80-67eabbc48ca8.png)
 
 
 ## 3. Creación proyecto y revisión pom.xml
 
 ![image](https://user-images.githubusercontent.com/31961588/220808781-fc3b4b8d-2902-4346-b3bc-86161ace463b.png)
+
+### 3.1 Add dependencia validation
+
+![image](https://user-images.githubusercontent.com/31961588/220814051-71a55045-db35-40f7-99db-9893386db2fd.png)
+
 
 **pom.xml**
 
@@ -26,7 +30,7 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>3.0.2</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.uts.invoice</groupId>
 	<artifactId>invoice</artifactId>
@@ -49,7 +53,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
@@ -71,8 +74,16 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>com.bolsadeideas.springboot.datajpa.app</groupId>
+			<artifactId>spring-boot-data-jpa</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-validation</artifactId>
+		</dependency>
 	</dependencies>
-
 	<build>
 		<plugins>
 			<plugin>
@@ -81,7 +92,7 @@
 			</plugin>
 		</plugins>
 	</build>
-
 </project>
 
-``
+
+```
