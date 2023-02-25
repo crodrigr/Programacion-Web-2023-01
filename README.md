@@ -4,6 +4,7 @@
 
 - [Trabajo I Entrega 4 Marzo](https://github.com/crodrigr/Programacion-Web-2023-01/blob/master/01_PrimerCorte/Material/00_PROGRAMACION_WEB.pdf)
 - [Herramienta Mockups](https://moqups.com/)
+- [Taller Clase 25 Febrero](https://github.com/crodrigr/Programacion-Web-2023-01/blob/master/01_PrimerCorte/Material/03_DOCUMENTOS/02_CSS/Taller_CSS_Maquetacion.pdf)
 
 ## Fechas importantes
 
